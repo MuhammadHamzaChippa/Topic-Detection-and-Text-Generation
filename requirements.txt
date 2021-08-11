@@ -1,0 +1,16 @@
+numpy 
+panda
+fastai==2.5
+pathlib 
+nltk
+praw 
+regex
+seaborn
+flask 
+spacy
+flask_pymongo 
+pymongo
+apispec 
+apispec-webframeworks 
+flask-restplus
+Werkzeug==0.16.1
