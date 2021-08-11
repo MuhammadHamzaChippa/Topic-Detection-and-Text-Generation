@@ -50,7 +50,7 @@ Pretrained GPT-2 model is loaded using PyTorch Deep Learning Library, which rece
 
 After training the Text classifier and Text generator, trained models are dumped into a .pkl format using pickle package. Trained models are then loaded and the category of the input is detected using Text Classifier and then the 200 words are generated from the input using Text Generator. It is ensured that the generated text is unique by comparing the generated text with all the previous generated text which is stored in the MongoDB Database.
 
-![images/Flowchart.png](images/Flowchart.png)
+![images/Flowchart.jpeg](images/Flowchart.jpeg)
 
 # Web Application using Flask
 
