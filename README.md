@@ -14,6 +14,14 @@ pip install -r requirements.txt
 
 # Pulling Docker Image
 
+To pull the docker image from docker hub and run the application run the following commands
+
+```python
+docker pull mhamzachippa/textgen
+docker run -p 5000:5000 mhamzachippa/textgen
+```
+Then go to localhost:5000 to run the application in the browser 
+
 # Data Scrapping From Reddit
 
 - Dataset for Text Classification is collected using praw library, and data is organized into trainable form after data cleaning.

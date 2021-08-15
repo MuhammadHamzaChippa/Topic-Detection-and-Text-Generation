@@ -13,7 +13,7 @@ from fastai.text.all import *
 
 # CONFIGURING MONGODB 
 # Connection to the MongoDB Server
-mongoClient = MongoClient ('mongodb://localhost:27017/posts')
+mongoClient = MongoClient ('mongodb+srv://hamza:mongodb@mongodb-heroku.igizt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 # Connection to the database
 db = mongoClient.posts
 #Collection

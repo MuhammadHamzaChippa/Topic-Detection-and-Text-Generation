@@ -11,11 +11,11 @@ pathlib.PosixPath = pathlib.WindowsPath
 from fastai.text.all import *
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/posts'
-mongo = PyMongo(app)
+#app.config['MONGO_URI'] = 'mongodb://localhost:27017/posts'
+#mongo = PyMongo(app)
 
 # Connection to the MongoDB Server
-mongoClient = MongoClient ('mongodb://localhost:27017/posts')
+mongoClient = MongoClient ('mongodb+srv://hamza:mongodb@mongodb-heroku.igizt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 # Connection to the database
 db = mongoClient.posts
 #Collection
@@ -46,7 +46,7 @@ def home():
                 clean_text = generate_text(user_input)
              
         # storing the generated text and category in database
-        mongo.db.record.insert([dict(Category = cat , Generated_Text = clean_text)])
+        collection.insert([dict(Category = cat , Generated_Text = clean_text)])
         
     return render_template('index_main.html' , prediction = cat , comment = clean_text)
 
