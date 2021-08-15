@@ -20,7 +20,7 @@ To pull the docker image from docker hub and run the application run the followi
 docker pull mhamzachippa/textgen
 docker run -p 5000:5000 mhamzachippa/textgen
 ```
-Then go to localhost:5000 to run the application in the browser 
+Then go to <localhost:5000> to run the application in the browser 
 
 # Data Scrapping From Reddit
 
